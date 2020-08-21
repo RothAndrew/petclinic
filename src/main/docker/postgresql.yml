@@ -1,0 +1,11 @@
+version: '2'
+services:
+  petclinic-postgresql:
+    image: postgres:12.1
+    # volumes:
+    #     - ~/volumes/jhipster/petclinic/postgresql/:/var/lib/postgresql/data/
+    environment:
+      - POSTGRES_USER=petclinic
+      - POSTGRES_PASSWORD=
+    ports:
+      - 5432:5432
